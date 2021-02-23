@@ -1,10 +1,10 @@
 apiVersion: "nais.io/v1alpha1"
 kind: "Application"
 metadata:
-  name: syfopdfgen
-  namespace: default
+  name: {{app}}
+  namespace: {{namespace}}
   labels:
-    team: teamsykefravr
+    team: {{team}}
 spec:
   image: {{ image }}
   port: 8080
@@ -24,12 +24,9 @@ spec:
     initialDelay: 5
     periodSeconds: 5
     failureThreshold: 30
-  leaderElection: false
   prometheus:
     enabled: true
     path: /prometheus
-  istio:
-    enabled: false
   resources:
     limits:
       cpu: 400m
