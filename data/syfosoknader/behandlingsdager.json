@@ -66,7 +66,7 @@
             }
           ],
           "undersporsmal": []
-         },
+        },
         {
           "id": "6894",
           "tag": "ENKELTSTAENDE_BEHANDLINGSDAGER_UKE_1",
@@ -78,10 +78,10 @@
           "pavirkerAndreSporsmal": false,
           "kriterieForVisningAvUndersporsmal": null,
           "svar": [
-              {
-                "verdi": "2018-01-02"
-              }
-            ],
+            {
+              "verdi": "2018-01-02"
+            }
+          ],
           "undersporsmal": []
         },
         {
@@ -95,9 +95,9 @@
           "pavirkerAndreSporsmal": false,
           "kriterieForVisningAvUndersporsmal": null,
           "svar": [
-                        {
-                          "verdi": ""
-                        }
+            {
+              "verdi": "Ikke til behandling"
+            }
           ],
           "undersporsmal": []
         }
