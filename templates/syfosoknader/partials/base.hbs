@@ -97,6 +97,10 @@
             </div>
         {{/each}}
     </div>
+
+    {{# if kvitteringer }}
+        {{> syfosoknader/partials/kvitteringer}}
+    {{/if}}
 </div>
 <div id="footer">
     <span class="soknadsid">{{ soknadsId }}</span>
