@@ -39,111 +39,231 @@
   ],
   "sporsmal": [
     {
-      "id": "15406",
+      "id": "7808ca00-19d8-498f-8f7b-9220dc0849e9",
       "tag": "ANSVARSERKLARING",
-      "sporsmalstekst": "Jeg vet at jeg kan miste retten til sykepenger hvis opplysningene jeg gir ikke er riktige eller fullstendige. Jeg vet også at NAV kan holde igjen eller kreve tilbake penger, og at å gi feil opplysninger kan være straffbart.",
-      "undertekst": null,
+      "sporsmalstekst": "Jeg vet at jeg kan miste retten til sykepenger hvis opplysningene jeg gir ikke er riktige eller fullstendige. Jeg\nvet også at NAV kan holde igjen eller kreve tilbake penger, og at å gi feil opplysninger kan være straffbart.",
+      "undertekst": "Jeg vet at jeg kan miste retten til sykepenger hvis jeg ikke har gitt riktige opplysninger. Jeg vet også at jeg må betale tilbake hvis jeg har gitt feil opplysninger eller latt være å informere.",
       "svartype": "CHECKBOX_PANEL",
       "min": null,
       "max": null,
-      "pavirkerAndreSporsmal": false,
       "kriterieForVisningAvUndersporsmal": null,
       "svar": [
         {
-          "verdi": "CHECKED"
+          "id": "8d388262-443e-474e-a4b8-66509c7669fe",
+          "verdi": "CHECKED",
+          "kvittering": null
         }
       ],
       "undersporsmal": []
     },
     {
-      "id": "53983",
-      "tag": "ENKELTSTAENDE_BEHANDLINGSDAGER_0",
-      "sporsmalstekst": "Var du til behandling mellom 26. desember 2017 - 10. januar 2018?",
+      "id": "d925e7b4-4ca1-4ac0-a852-b2e14f783461",
+      "tag": "TRANSPORT_TIL_DAGLIG",
+      "sporsmalstekst": "bruker du vanligvis bil eller offentlig transport til og fra arbeidsplassen?",
       "undertekst": null,
-      "svartype": "INFO_BEHANDLINGSDAGER",
+      "svartype": "JA_NEI",
       "min": null,
       "max": null,
-      "pavirkerAndreSporsmal": false,
-      "kriterieForVisningAvUndersporsmal": null,
-      "svar": [],
+      "kriterieForVisningAvUndersporsmal": "JA",
+      "svar": [
+        {
+          "id": "2aeed63b-2717-46b5-a618-f9dacc8fca96",
+          "verdi": "JA",
+          "kvittering": null
+        }
+      ],
       "undersporsmal": [
         {
-          "id": "2549",
-          "tag": "ENKELTSTAENDE_BEHANDLINGSDAGER_UKE_0",
-          "sporsmalstekst": "26. desember - 29. desember 2017",
+          "id": "58abaa3f-6bba-46b6-abce-708d39be0877",
+          "tag": "TYPE_TRANSPORT",
+          "sporsmalstekst": "Hva slags type transport bruker du?",
           "undertekst": null,
-          "svartype": "RADIO_GRUPPE_UKEKALENDER",
-          "min": "2017-12-26",
-          "max": "2017-12-29",
-          "pavirkerAndreSporsmal": false,
-          "kriterieForVisningAvUndersporsmal": null,
-          "svar": [
-            {
-              "verdi": "2017-12-27"
-            }
-          ],
-          "undersporsmal": []
-        },
-        {
-          "id": "6894",
-          "tag": "ENKELTSTAENDE_BEHANDLINGSDAGER_UKE_1",
-          "sporsmalstekst": "1. januar - 5. januar 2018",
-          "undertekst": null,
-          "svartype": "RADIO_GRUPPE_UKEKALENDER",
+          "svartype": "CHECKBOX_GRUPPE",
           "min": null,
           "max": null,
-          "pavirkerAndreSporsmal": false,
           "kriterieForVisningAvUndersporsmal": null,
-          "svar": [
+          "svar": [],
+          "undersporsmal": [
             {
-              "verdi": "2018-01-02"
-            }
-          ],
-          "undersporsmal": []
-        },
-        {
-          "id": "46116",
-          "tag": "ENKELTSTAENDE_BEHANDLINGSDAGER_UKE_2",
-          "sporsmalstekst": "8. januar - 10. januar 2018",
-          "undertekst": null,
-          "svartype": "RADIO_GRUPPE_UKEKALENDER",
-          "min": null,
-          "max": null,
-          "pavirkerAndreSporsmal": false,
-          "kriterieForVisningAvUndersporsmal": null,
-          "svar": [
+              "id": "48453c0f-990d-4af0-9b14-7fe43b36ea8b",
+              "tag": "BIL_TIL_DAGLIG",
+              "sporsmalstekst": "Bil",
+              "undertekst": null,
+              "svartype": "CHECKBOX",
+              "min": null,
+              "max": null,
+              "kriterieForVisningAvUndersporsmal": "CHECKED",
+              "svar": [
+                {
+                  "id": "e60cb3e5-7a43-4bc0-870b-d3627a075a0c",
+                  "verdi": "CHECKED",
+                  "kvittering": null
+                }
+              ],
+              "undersporsmal": [
+                {
+                  "id": "9f59db43-bbe8-4f73-aea0-35d254230e72",
+                  "tag": "KM_HJEM_JOBB",
+                  "sporsmalstekst": "Hvor mange km er reisen med bil hjemmefra til jobb?",
+                  "undertekst": null,
+                  "svartype": "KILOMETER",
+                  "min": "0",
+                  "max": null,
+                  "kriterieForVisningAvUndersporsmal": null,
+                  "svar": [
+                    {
+                      "id": "d67cd503-6eb2-4693-b163-10da1329853b",
+                      "verdi": "25.1",
+                      "kvittering": null
+                    }
+                  ],
+                  "undersporsmal": []
+                }
+              ]
+            },
             {
-              "verdi": "Ikke til behandling"
+              "id": "77a0b941-497b-4621-a038-26431a5fa220",
+              "tag": "OFFENTLIG_TRANSPORT_TIL_DAGLIG",
+              "sporsmalstekst": "Offentlig transport",
+              "undertekst": null,
+              "svartype": "CHECKBOX",
+              "min": null,
+              "max": null,
+              "kriterieForVisningAvUndersporsmal": "CHECKED",
+              "svar": [
+                {
+                  "id": "4f6111b3-6096-466a-9019-69b8650d4cce",
+                  "verdi": "CHECKED",
+                  "kvittering": null
+                }
+              ],
+              "undersporsmal": [
+                {
+                  "id": "eaca40ee-8cce-4d04-9b22-a5b394170335",
+                  "tag": "OFFENTLIG_TRANSPORT_BELOP",
+                  "sporsmalstekst": "Hvor mye betaler du vanligvis i måneden for offentlig transport?",
+                  "undertekst": null,
+                  "svartype": "BELOP",
+                  "min": "0",
+                  "max": null,
+                  "kriterieForVisningAvUndersporsmal": null,
+                  "svar": [
+                    {
+                      "id": "642d4415-f550-4e38-a436-abc4314de290",
+                      "verdi": "125",
+                      "kvittering": null
+                    }
+                  ],
+                  "undersporsmal": []
+                }
+              ]
             }
-          ],
-          "undersporsmal": []
+          ]
         }
       ]
     },
     {
-      "id": "50766",
-      "tag": "VAER_KLAR_OVER_AT",
-      "sporsmalstekst": "Viktig å være klar over:",
-      "undertekst": "<ul><li>Du kan bare få sykepenger hvis det er din egen sykdom eller skade som hindrer deg i å jobbe. Sosiale eller økonomiske problemer gir ikke rett til sykepenger.</li><li>Du kan miste retten til sykepenger hvis du nekter å opplyse om din egen arbeidsevne, eller hvis du ikke tar imot behandling eller tilrettelegging.</li><li>Retten til sykepenger gjelder bare inntekt du har mottatt som lønn og betalt skatt av på sykmeldingstidspunktet.</li><li>NAV kan innhente opplysninger som er nødvendige for å behandle søknaden.</li><li>Du må melde fra til NAV hvis du satt i varetekt, sonet straff eller var under forvaring i sykmeldingsperioden.</li><li>Fristen for å søke sykepenger er som hovedregel 3 måneder</li></ul><p>Du kan lese mer om rettigheter og plikter på <a href=\"https://www.nav.no/sykepenger\" target=\"_blank\">nav.no/sykepenger</a>.</p>",
-      "svartype": "IKKE_RELEVANT",
+      "id": "dc8a8fc6-25ea-4906-a6b9-6466c546f40a",
+      "tag": "REISE_MED_BIL",
+      "sporsmalstekst": "Reiste du med bil til og fra jobben mellom 8. februar - 4. mars 2021?",
+      "undertekst": null,
+      "svartype": "JA_NEI",
       "min": null,
       "max": null,
-      "pavirkerAndreSporsmal": false,
-      "kriterieForVisningAvUndersporsmal": null,
-      "svar": [],
-      "undersporsmal": []
+      "kriterieForVisningAvUndersporsmal": "JA",
+      "svar": [
+        {
+          "id": "1cf5572c-e524-48b2-87fd-a70b6217fac6",
+          "verdi": "JA",
+          "kvittering": null
+        }
+      ],
+      "undersporsmal": [
+        {
+          "id": "e8b92ef0-9fd0-4050-a639-0b697b4460c9",
+          "tag": "BIL_DATOER",
+          "sporsmalstekst": "Hvilke dager reiste du med bil?",
+          "undertekst": null,
+          "svartype": "DATOER",
+          "min": "2021-02-08",
+          "max": "2021-03-04",
+          "kriterieForVisningAvUndersporsmal": null,
+          "svar": [
+            {
+              "id": "59386ce0-0f7b-4dff-b6fc-f3858e05b9c1",
+              "verdi": "2021-02-11"
+            },
+            {
+              "id": "c91f5d60-5dc2-4777-bd34-146f631cc0da",
+              "verdi": "2021-02-16"
+            },
+            {
+              "id": "b5b084c3-7d04-4cad-96c1-b69147dbf568",
+              "verdi": "2021-02-19"
+            },
+            {
+              "id": "edf267a1-e008-4e6e-b0c1-8bb6907f7c14",
+              "verdi": "2021-02-23"
+            },
+            {
+              "id": "58f1d162-3da3-46c7-b0d6-ddd3d546613f",
+              "verdi": "2021-02-25"
+            }
+          ],
+          "undersporsmal": []
+        },
+        {
+          "id": "f4cf43a4-ecf0-4605-8197-0bde65c925bf",
+          "tag": "BIL_BOMPENGER",
+          "sporsmalstekst": "Hadde du utgifter til bompenger?",
+          "undertekst": null,
+          "svartype": "JA_NEI",
+          "min": null,
+          "max": null,
+          "kriterieForVisningAvUndersporsmal": "JA",
+          "svar": [
+            {
+              "id": "25a8e118-55e9-4778-b245-36298bdc9552",
+              "verdi": "JA"
+            }
+          ],
+          "undersporsmal": [
+            {
+              "id": "2f510929-7462-4439-aa8e-231eb9b61efb",
+              "tag": "BIL_BOMPENGER_BELOP",
+              "sporsmalstekst": "Hvor mye betalte du i bompenger mellom hjemmet ditt og jobben i perioden?",
+              "undertekst": null,
+              "svartype": "BELOP",
+              "min": "0",
+              "max": null,
+              "kriterieForVisningAvUndersporsmal": null,
+              "svar": [
+                {
+                  "id": "c56719cd-caa8-44e3-9f06-e8b9236331a9",
+                  "verdi": "25"
+                }
+              ],
+              "undersporsmal": []
+            }
+          ]
+        }
+      ]
     },
     {
-      "id": "62882",
-      "tag": "BEKREFT_OPPLYSNINGER",
-      "sporsmalstekst": "Jeg har lest all informasjonen jeg har fått i søknaden og bekrefter at opplysningene jeg har gitt er korrekte.",
+      "id": "dbe29a76-2492-4a3c-a581-4222648cf130",
+      "tag": "UTBETALING",
+      "sporsmalstekst": "Legger arbeidsgiveren din ut for reisene?",
       "undertekst": null,
-      "svartype": "CHECKBOX_PANEL",
+      "svartype": "JA_NEI",
       "min": null,
       "max": null,
-      "pavirkerAndreSporsmal": false,
       "kriterieForVisningAvUndersporsmal": null,
-      "svar": [],
+      "svar": [
+        {
+          "id": "aab6f5e4-92d3-4fcf-b468-cbad114581f6",
+          "verdi": "JA"
+        }
+      ],
       "undersporsmal": []
     }
   ]
