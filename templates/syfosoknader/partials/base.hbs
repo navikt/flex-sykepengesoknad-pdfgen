@@ -61,8 +61,13 @@
                     {{#eq periode.sykmeldingstype "BEHANDLINGSDAGER" }}
                       Behandlingsdager
                     {{/eq}}
+                    {{#eq periode.sykmeldingstype "REISETILSKUDD" }}
+                      Reisetilskudd
+                    {{/eq}}
                     {{#not_eq periode.sykmeldingstype "BEHANDLINGSDAGER" }}
-                      {{ periode.grad }} % sykmeldt
+                      {{#not_eq periode.sykmeldingstype "REISETILSKUDD" }}
+                        {{ periode.grad }} % sykmeldt
+                      {{/not_eq}}
                     {{/not_eq}}
                 </p>
                 {{# if periode.faktiskGrad }}
