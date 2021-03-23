@@ -5,16 +5,15 @@
 <table id="kvittering__oppsummering">
     <thead>
     <th></th>
-    <th>Dato</th>
     <th>Transport</th>
+    <th></th>
     <th>Beløp</th>
     </thead>
     <tbody>
     {{# each kvitteringer as |kvittering|~}}
         <tr>
             <td>{{ inc @index }}</td>
-            <td><a href="#kvittering_{{ inc @index }}">{{iso_to_date kvittering.datoForUtgift}}</a></td>
-            <td><a href="#kvittering_{{ inc @index }}">{{kvittering.typeUtgift}}</a></td>
+            <td colspan="2"><a href="#kvittering_{{ inc @index }}" >{{kvittering.typeUtgift}}</a></td>
             <td><a href="#kvittering_{{ inc @index }}">{{int_as_currency_no kvittering.belop}} kr</a></td>
         </tr>
     {{/each}}
@@ -31,7 +30,6 @@
             <h2>Kvittering {{inc @index}}</h2>
         </div>
         <div class="kvittering__metadata">
-            <p><span class="semibold">Dato</span><br/>{{iso_to_date kvittering.datoForUtgift}}</p>
             <p><span class="semibold">Beløp</span><br/>{{int_as_currency_no kvittering.belop}} kr</p>
             <p><span class="semibold">Transport</span><br/>{{kvittering.typeUtgift}}</p>
         </div>
