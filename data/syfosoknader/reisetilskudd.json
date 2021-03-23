@@ -148,7 +148,7 @@
                   "svar": [
                     {
                       "id": "642d4415-f550-4e38-a436-abc4314de290",
-                      "verdi": "125",
+                      "verdi": "12500",
                       "kvittering": null
                     }
                   ],
@@ -238,7 +238,7 @@
               "svar": [
                 {
                   "id": "c56719cd-caa8-44e3-9f06-e8b9236331a9",
-                  "verdi": "25"
+                  "verdi": "2500"
                 }
               ],
               "undersporsmal": []
