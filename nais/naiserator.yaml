@@ -11,7 +11,7 @@ spec:
   ingresses:
     - {{ingress}}
   replicas:
-    min: 1
+    min: 2
     max: 4
     cpuThresholdPercentage: 70
   liveness:
@@ -31,8 +31,8 @@ spec:
     path: /prometheus
   resources:
     limits:
-      cpu: 400m
+      cpu: 500m
       memory: 512Mi
     requests:
-      cpu: 50m
+      cpu: 200m
       memory: 128Mi
