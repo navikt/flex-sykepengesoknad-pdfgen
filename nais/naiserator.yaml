@@ -42,3 +42,4 @@ spec:
     inbound:
       rules:
         - application: sykepengesoknad-arkivering-oppgave
+        - application: sykepengesoknad-altinn
