@@ -33,6 +33,11 @@
                             Sendt til NAV<br/>{{ iso_to_date innsendtDato }}
                         </p>
                     {{/if}}
+                    {{# if innsendtTid}}
+                        <p>
+                            Sendt til NAV<br/>{{ iso_to_nor_datetime innsendtTid }}
+                        </p>
+                    {{/if}}
                     {{# if sendtArbeidsgiver}}
                         <p>
                             Sendt til arbeidsgiver<br/>{{ iso_to_date sendtArbeidsgiver }}
