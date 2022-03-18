@@ -10,8 +10,6 @@ metadata:
 spec:
   image: {{ image }}
   port: 8080
-  ingresses:
-    - {{ingress}}
   replicas:
     min: 2
     max: 4

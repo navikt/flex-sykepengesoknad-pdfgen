@@ -1,6 +1,5 @@
 {
   "app": "flex-sykepengesoknad-pdfgen",
   "namespace": "flex",
-  "team": "flex",
-  "ingress": "https://flex-sykepengesoknad-pdfgen.dev.intern.nav.no"
+  "team": "flex"
 }
