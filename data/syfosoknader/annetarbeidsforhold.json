@@ -387,7 +387,7 @@
         {
             "id": "27",
             "tag": "ARBEIDSLEDIG_UTLAND",
-            "sporsmalstekst": "Var du på reise utenfor EØS mens du var sykmeldt 13. - 20. mars 2020?",
+            "sporsmalstekst": "Var du på reise utenfor EU/EØS/Storbritannia mens du var sykmeldt 13. - 20. mars 2020?",
             "undertekst": null,
             "svartype": "JA_NEI",
             "min": null,
@@ -404,7 +404,7 @@
                 {
                     "id": "28",
                     "tag": "UTLAND_NAR",
-                    "sporsmalstekst": "Når var du utenfor EØS?",
+                    "sporsmalstekst": "Når var du utenfor EU/EØS/Storbritannia?",
                     "undertekst": null,
                     "svartype": "PERIODER",
                     "min": "2020-03-13",
@@ -430,7 +430,7 @@
                             "id": "30",
                             "tag": "IKKE_SOKT_UTENLANDSOPPHOLD_INFORMASJON",
                             "sporsmalstekst": null,
-                            "undertekst": "<p>I utgangspunktet kan du bare få sykepenger mens du er i et land innenfor EØS. Du kan likevel <a target=\"_blank\" href=\"https://tjenester.nav.no/sykefravaer/sykepengesoknad-utland\">søke NAV om å få reise ut av EØS</a> og beholde sykepengene i en begrenset periode.</p>",
+                            "undertekst": "<p>I utgangspunktet kan du bare få sykepenger mens du er i et land innenfor EU/EØS/Storbritannia. Du kan likevel <a target=\"_blank\" href=\"https://tjenester.nav.no/sykefravaer/sykepengesoknad-utland\">søke NAV om å få reise ut av EU/EØS/Storbritannia</a> og beholde sykepengene i en begrenset periode.</p>",
                             "svartype": "IKKE_RELEVANT",
                             "min": null,
                             "max": null,
