@@ -1,12 +1,12 @@
 apiVersion: "nais.io/v1alpha1"
 kind: "Application"
 metadata:
-  name: {{app}}
-  namespace: {{namespace}}
+  name: flex-sykepengesoknad-pdfgen
+  namespace: flex
   annotations:
     nginx.ingress.kubernetes.io/proxy-body-size: "20M"
   labels:
-    team: {{team}}
+    team: flex
 spec:
   image: {{ image }}
   port: 8080
