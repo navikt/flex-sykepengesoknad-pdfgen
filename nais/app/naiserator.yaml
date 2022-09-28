@@ -15,13 +15,13 @@ spec:
     max: 4
     cpuThresholdPercentage: 90
   liveness:
-    path: /is_alive
+    path: /internal/is_alive
     timeout: 1
     initialDelay: 5
     periodSeconds: 5
     failureThreshold: 30
   readiness:
-    path: /is_alive
+    path: /internal/is_alive
     timeout: 1
     initialDelay: 5
     periodSeconds: 5
