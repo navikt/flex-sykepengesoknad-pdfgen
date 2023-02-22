@@ -18,9 +18,9 @@ jobs:
           TIME=$(TZ="Europe/Oslo" date +%Y.%m.%d-%H.%M)
           COMMIT=$(git rev-parse --short=8 HEAD)
           VERSION=$TIME-$COMMIT
-          echo "::set-output name=image::ghcr.io/navikt/$APP:$VERSION"
+          echo "image=ghcr.io/navikt/$APP:$VERSION" >> $GITHUB_OUTPUT
       - name: Docker login
-        uses: docker/login-action@49ed152c8eca782a232dede0303416e8f356c37b
+        uses: docker/login-action@f4ef78c080cd8ba55a85445d5b36e214a81df20a
         if: github.ref_name == 'master' || startsWith(github.ref_name, 'dev-')
         with:
           registry: ghcr.io
