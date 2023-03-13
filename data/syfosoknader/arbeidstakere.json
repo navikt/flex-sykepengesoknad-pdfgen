@@ -365,6 +365,53 @@
       ]
     },
     {
+      "id": "308912",
+      "tag": "SPØRSMÅL MED FRITEKST",
+      "sporsmalstekst": "Underspørsmålene her har fritekst med og uten svar",
+      "undertekst": null,
+      "svartype": "JA_NEI",
+      "min": null,
+      "max": null,
+      "kriterieForVisningAvUndersporsmal": "JA",
+      "svar": [
+        {
+          "verdi": "JA"
+        }
+      ],
+      "undersporsmal": [
+        {
+          "id": "308913",
+          "tag": "HVOR_MANGE_TIMER_PER_UKE_0",
+          "sporsmalstekst": "Fritekst uten svar",
+          "undertekst": null,
+          "svartype": "FRITEKST",
+          "min": null,
+          "max": "100",
+          "kriterieForVisningAvUndersporsmal": null,
+          "svar": [
+          ],
+          "undersporsmal": []
+        },
+        {
+          "id": "308913",
+          "tag": "HVOR_MANGE_TIMER_PER_UKE_0",
+          "sporsmalstekst": "Fritekst med svar",
+          "undertekst": null,
+          "svartype": "FRITEKST",
+          "min": null,
+          "max": "100",
+          "kriterieForVisningAvUndersporsmal": null,
+          "svar": [
+            {
+              "verdi": "Dette er et langt fritekst svar"
+            }
+          ],
+          "undersporsmal": []
+        }
+
+      ]
+    },
+    {
       "id": "308919",
       "tag": "ANDRE_INNTEKTSKILDER",
       "sporsmalstekst": "Har du andre inntektskilder enn LØNNS- OG REGNSKAPSSENTERET?",
