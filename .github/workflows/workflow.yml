@@ -1,44 +1,27 @@
 name: Bygg, publish og deploy
 on:
   push:
-env:
-  APP: flex-sykepengesoknad-pdfgen
 jobs:
   build-and-publish:
     name: Bygg, test og publiser docker image
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
     outputs:
-      image: ${{ steps.lag-image.outputs.image }}
+      image: ${{ steps.docker-build-push.outputs.image }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-      - name: Generer image
-        id: lag-image
-        run: |
-          TIME=$(TZ="Europe/Oslo" date +%Y.%m.%d-%H.%M)
-          COMMIT=$(git rev-parse --short=8 HEAD)
-          VERSION=$TIME-$COMMIT
-          echo "image=ghcr.io/navikt/$APP:$VERSION" >> $GITHUB_OUTPUT
-      - name: Docker login
-        uses: docker/login-action@f4ef78c080cd8ba55a85445d5b36e214a81df20a
+      - name: docker-build-push
         if: github.ref_name == 'master' || startsWith(github.ref_name, 'dev-')
+        uses: nais/docker-build-push@v0
+        id: docker-build-push
         with:
-          registry: ghcr.io
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          team: flex
+          identity_provider: ${{ secrets.NAIS_WORKLOAD_IDENTITY_PROVIDER }}
+          project_id: ${{ vars.NAIS_MANAGEMENT_PROJECT_ID }}
 
-      - name: Bygg og push Docker image
-        if: github.ref_name == 'master' || startsWith(github.ref_name, 'dev-')
-        run: |
-          docker build . -f Dockerfile -t ${{ steps.lag-image.outputs.image }}
-          docker push ${{ steps.lag-image.outputs.image }}
-
-  snyk-docker:
-    needs: build-and-publish
-    uses: navikt/flex-github-actions-workflows/.github/workflows/snyk-docker.yml@master
-    with:
-      image: ${{ needs.build-and-publish.outputs.image }}
-    secrets: inherit
 
   nais-deploy:
     needs: build-and-publish
