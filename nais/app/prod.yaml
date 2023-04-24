@@ -1,1 +1,3 @@
 place: holder
+cpu: 400m
+memory: 512Mi
