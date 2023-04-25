@@ -16,16 +16,11 @@ spec:
     cpuThresholdPercentage: 90
   liveness:
     path: /internal/is_alive
-    timeout: 1
-    initialDelay: 5
-    periodSeconds: 5
-    failureThreshold: 30
   readiness:
+    path: /internal/is_ready
+  startup:
     path: /internal/is_alive
-    timeout: 1
-    initialDelay: 5
-    periodSeconds: 5
-    failureThreshold: 30
+    initialDelay: 10
   prometheus:
     enabled: true
     path: /internal/prometheus
