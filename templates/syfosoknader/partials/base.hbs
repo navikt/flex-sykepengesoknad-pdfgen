@@ -101,6 +101,15 @@
                 {{ arbeidsgiver }}
             </p>
             {{/if}}
+
+            {{#if egenmeldingsdagerFraSykmelding}}
+                <p class="header__tittel">Egenmeldingsdager fra sykmeldingen</p>
+                    {{# each egenmeldingsdagerFraSykmelding }}
+                        <p class="svar svar--dato">
+                             {{ iso_to_date this }}
+                        </p>
+                    {{/each}}
+            {{/if}}
         </div>
     </div>
     <div class="sporsmalcontainer">

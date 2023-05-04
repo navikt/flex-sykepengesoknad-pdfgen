@@ -20,6 +20,11 @@
       "faktiskTimer": null
     }
   ],
+  "egenmeldingsdagerFraSykmelding": [
+    "2019-09-02",
+    "2019-09-03",
+    "2019-09-04"
+  ],
   "sporsmal": [
     {
       "id": "660076",
