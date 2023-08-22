@@ -189,6 +189,24 @@
     {{/each}}
 {{/eq}}
 
+{{#eq svartype "PERIODE"}}
+    {{#if this.sporsmalstekst}}
+        <h3 class="sporsmalstekst">
+            {{ this.sporsmalstekst }}
+        </h3>
+    {{/if}}
+    {{#if this.undertekst}}
+        <p class="undertekst">
+            {{ this.undertekst }}
+        </p>
+    {{/if }}
+    {{# each svar }}
+        <p class="svar svar--dato">
+            {{ json_to_period verdi}}
+        </p>
+    {{/each}}
+{{/eq}}
+
 {{#eq svartype "LAND"}}
     {{#if this.sporsmalstekst}}
         <h3 class="sporsmalstekst">
