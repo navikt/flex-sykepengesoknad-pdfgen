@@ -719,7 +719,7 @@
               "undertekst": null,
               "min": "2013-08-22",
               "max": "2033-08-22",
-              "svartype": "PERIODER",
+              "svartype": "PERIODE",
               "kriterieForVisningAvUndersporsmal": null,
               "svar": [
                 {
@@ -797,7 +797,7 @@
               "undertekst": null,
               "min": "2013-08-22",
               "max": "2024-08-22",
-              "svartype": "PERIODER",
+              "svartype": "PERIODE",
               "kriterieForVisningAvUndersporsmal": null,
               "svar": [
                 {
@@ -912,7 +912,106 @@
               "undertekst": null,
               "min": "2021-08-22",
               "max": "2023-08-22",
-              "svartype": "PERIODER",
+              "svartype": "PERIODE",
+              "kriterieForVisningAvUndersporsmal": null,
+              "svar": [
+                {
+                  "verdi": "{\"fom\":\"2022-12-13\",\"tom\":\"2023-01-02\"}"
+                }
+              ],
+              "undersporsmal": []
+            }
+          ]
+        },
+        {
+          "id": "d24bef1d-e27e-340d-9f91-88bdcc08b466",
+          "tag": "MEDLEMSKAP_OPPHOLD_UTENFOR_NORGE_GRUPPERING_1",
+          "sporsmalstekst": null,
+          "undertekst": null,
+          "min": null,
+          "max": null,
+          "svartype": "IKKE_RELEVANT",
+          "kriterieForVisningAvUndersporsmal": null,
+          "svar": [],
+          "undersporsmal": [
+            {
+              "id": "a42f8426-36e4-3644-bb12-d816a6f39e5c",
+              "tag": "MEDLEMSKAP_OPPHOLD_UTENFOR_NORGE_HVOR_1",
+              "sporsmalstekst": "Velg land",
+              "undertekst": null,
+              "min": null,
+              "max": null,
+              "svartype": "COMBOBOX_SINGLE",
+              "kriterieForVisningAvUndersporsmal": null,
+              "svar": [
+                {
+                  "verdi": "Syden"
+                }
+              ],
+              "undersporsmal": []
+            },
+            {
+              "id": "42b12505-230c-3970-a947-5e8d58341d18",
+              "tag": "MEDLEMSKAP_OPPHOLD_UTENFOR_NORGE_BEGRUNNELSE_1",
+              "sporsmalstekst": "Grunn for opphold",
+              "undertekst": null,
+              "min": null,
+              "max": null,
+              "svartype": "RADIO_GRUPPE",
+              "kriterieForVisningAvUndersporsmal": null,
+              "svar": [],
+              "undersporsmal": [
+                {
+                  "id": "58c73574-3243-32be-8705-989c12908011",
+                  "tag": "MEDLEMSKAP_OPPHOLD_UTENFOR_NORGE_BEGRUNNELSE_STUDIE_1",
+                  "sporsmalstekst": "Studier",
+                  "undertekst": null,
+                  "min": null,
+                  "max": null,
+                  "svartype": "RADIO",
+                  "kriterieForVisningAvUndersporsmal": null,
+                  "svar": [
+                    {
+                      "verdi": "CHECKED"
+                    }
+                  ],
+                  "undersporsmal": []
+                },
+                {
+                  "id": "2028231d-4e99-335d-ae63-3fba419f84fa",
+                  "tag": "MEDLEMSKAP_OPPHOLD_UTENFOR_NORGE_BEGRUNNELSE_FERIE_1",
+                  "sporsmalstekst": "Ferie",
+                  "undertekst": null,
+                  "min": null,
+                  "max": null,
+                  "svartype": "RADIO",
+                  "kriterieForVisningAvUndersporsmal": null,
+                  "svar": [
+                  ],
+                  "undersporsmal": []
+                },
+                {
+                  "id": "263b76e1-3da4-3b92-873b-7a64199b0611",
+                  "tag": "MEDLEMSKAP_OPPHOLD_UTENFOR_NORGE_BEGRUNNELSE_FORSORG_1",
+                  "sporsmalstekst": "Forsørget medfølgende familiemedlem",
+                  "undertekst": null,
+                  "min": null,
+                  "max": null,
+                  "svartype": "RADIO",
+                  "kriterieForVisningAvUndersporsmal": null,
+                  "svar": [],
+                  "undersporsmal": []
+                }
+              ]
+            },
+            {
+              "id": "64170a0a-d908-3cfa-91ea-1b05b5e2fa87",
+              "tag": "MEDLEMSKAP_OPPHOLD_UTENFOR_NORGE_NAAR_1",
+              "sporsmalstekst": null,
+              "undertekst": null,
+              "min": "2021-08-22",
+              "max": "2023-08-22",
+              "svartype": "PERIODE",
               "kriterieForVisningAvUndersporsmal": null,
               "svar": [
                 {
@@ -1027,7 +1126,7 @@
               "undertekst": null,
               "min": "2021-08-22",
               "max": "2023-08-22",
-              "svartype": "PERIODER",
+              "svartype": "PERIODE",
               "kriterieForVisningAvUndersporsmal": null,
               "svar": [
                 {
