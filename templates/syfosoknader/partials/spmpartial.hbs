@@ -207,6 +207,42 @@
     {{/each}}
 {{/eq}}
 
+{{#eq svartype "COMBOBOX_SINGLE"}}
+    {{#if this.sporsmalstekst}}
+        <h3 class="sporsmalstekst">
+            {{ this.sporsmalstekst }}
+        </h3>
+    {{/if}}
+    {{#if this.undertekst}}
+        <p class="undertekst">
+            {{ this.undertekst }}
+        </p>
+    {{/if }}
+    {{# each svar }}
+        <p class="svar">
+            {{ verdi}}
+        </p>
+    {{/each}}
+{{/eq}}
+
+{{#eq svartype "COMBOBOX_MULTIPLE"}}
+    {{#if this.sporsmalstekst}}
+        <h3 class="sporsmalstekst">
+            {{ this.sporsmalstekst }}
+        </h3>
+    {{/if}}
+    {{#if this.undertekst}}
+        <p class="undertekst">
+            {{ this.undertekst }}
+        </p>
+    {{/if }}
+    {{# each svar }}
+        <p class="svar">
+            {{ verdi}}
+        </p>
+    {{/each}}
+{{/eq}}
+
 {{#eq svartype "FRITEKST"}}
     {{#each svar as |s index|~}}
         {{#if ../sporsmalstekst}}

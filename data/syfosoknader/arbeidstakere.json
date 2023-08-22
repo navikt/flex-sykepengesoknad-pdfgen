@@ -36,83 +36,102 @@
       "max": null,
       "pavirkerAndreSporsmal": false,
       "kriterieForVisningAvUndersporsmal": "JA",
-      "svar": [{
-        "verdi": "JA",
-        "avgittAv": null
-      }],
-      "undersporsmal": [{
-        "id": "660077",
-        "tag": "TIDLIGERE_SYK",
-        "sporsmalstekst": null,
-        "undertekst": null,
-        "svartype": "CHECKBOX_GRUPPE",
-        "min": null,
-        "max": null,
-        "pavirkerAndreSporsmal": false,
-        "kriterieForVisningAvUndersporsmal": null,
-        "svar": [],
-        "undersporsmal": [{
-          "id": "660078",
-          "tag": "TIDLIGERE_EGENMELDING",
-          "sporsmalstekst": "Jeg var syk med egenmelding",
+      "svar": [
+        {
+          "verdi": "JA",
+          "avgittAv": null
+        }
+      ],
+      "undersporsmal": [
+        {
+          "id": "660077",
+          "tag": "TIDLIGERE_SYK",
+          "sporsmalstekst": null,
           "undertekst": null,
-          "svartype": "CHECKBOX",
+          "svartype": "CHECKBOX_GRUPPE",
           "min": null,
           "max": null,
           "pavirkerAndreSporsmal": false,
-          "kriterieForVisningAvUndersporsmal": "CHECKED",
-          "svar": [{
-            "verdi": "CHECKED",
-            "avgittAv": null
-          }],
-          "undersporsmal": [{
-            "id": "660079",
-            "tag": "EGENMELDINGER_NAR",
-            "sporsmalstekst": "Hvilke dager var du syk med egenmelding? Du trenger bare oppgi dager før 10. februar 2020.",
-            "undertekst": null,
-            "svartype": "PERIODER",
-            "min": "2019-08-10",
-            "max": "2020-02-09",
-            "pavirkerAndreSporsmal": false,
-            "kriterieForVisningAvUndersporsmal": null,
-            "svar": [{
-              "verdi": "{\"fom\":\"2020-01-23\",\"tom\":\"2020-02-09\"}",
-              "avgittAv": null
-            }],
-            "undersporsmal": []
-          }]
-        }, {
-          "id": "660080",
-          "tag": "TIDLIGERE_PAPIRSYKMELDING",
-          "sporsmalstekst": "Jeg var syk med papirsykmelding",
-          "undertekst": null,
-          "svartype": "CHECKBOX",
-          "min": null,
-          "max": null,
-          "pavirkerAndreSporsmal": false,
-          "kriterieForVisningAvUndersporsmal": "CHECKED",
-          "svar": [{
-            "verdi": "CHECKED",
-            "avgittAv": null
-          }],
-          "undersporsmal": [{
-            "id": "660081",
-            "tag": "PAPIRSYKMELDING_NAR",
-            "sporsmalstekst": "Hvilke dager var du syk med papirsykmelding? Du trenger bare oppgi dager før 10. februar 2020.",
-            "undertekst": null,
-            "svartype": "PERIODER",
-            "min": "2019-08-10",
-            "max": "2020-02-09",
-            "pavirkerAndreSporsmal": false,
-            "kriterieForVisningAvUndersporsmal": null,
-            "svar": [{
-              "verdi": "{\"fom\":\"2020-01-23\",\"tom\":\"2020-02-09\"}",
-              "avgittAv": null
-            }],
-            "undersporsmal": []
-          }]
-        }]
-      }]
+          "kriterieForVisningAvUndersporsmal": null,
+          "svar": [],
+          "undersporsmal": [
+            {
+              "id": "660078",
+              "tag": "TIDLIGERE_EGENMELDING",
+              "sporsmalstekst": "Jeg var syk med egenmelding",
+              "undertekst": null,
+              "svartype": "CHECKBOX",
+              "min": null,
+              "max": null,
+              "pavirkerAndreSporsmal": false,
+              "kriterieForVisningAvUndersporsmal": "CHECKED",
+              "svar": [
+                {
+                  "verdi": "CHECKED",
+                  "avgittAv": null
+                }
+              ],
+              "undersporsmal": [
+                {
+                  "id": "660079",
+                  "tag": "EGENMELDINGER_NAR",
+                  "sporsmalstekst": "Hvilke dager var du syk med egenmelding? Du trenger bare oppgi dager før 10. februar 2020.",
+                  "undertekst": null,
+                  "svartype": "PERIODER",
+                  "min": "2019-08-10",
+                  "max": "2020-02-09",
+                  "pavirkerAndreSporsmal": false,
+                  "kriterieForVisningAvUndersporsmal": null,
+                  "svar": [
+                    {
+                      "verdi": "{\"fom\":\"2020-01-23\",\"tom\":\"2020-02-09\"}",
+                      "avgittAv": null
+                    }
+                  ],
+                  "undersporsmal": []
+                }
+              ]
+            },
+            {
+              "id": "660080",
+              "tag": "TIDLIGERE_PAPIRSYKMELDING",
+              "sporsmalstekst": "Jeg var syk med papirsykmelding",
+              "undertekst": null,
+              "svartype": "CHECKBOX",
+              "min": null,
+              "max": null,
+              "pavirkerAndreSporsmal": false,
+              "kriterieForVisningAvUndersporsmal": "CHECKED",
+              "svar": [
+                {
+                  "verdi": "CHECKED",
+                  "avgittAv": null
+                }
+              ],
+              "undersporsmal": [
+                {
+                  "id": "660081",
+                  "tag": "PAPIRSYKMELDING_NAR",
+                  "sporsmalstekst": "Hvilke dager var du syk med papirsykmelding? Du trenger bare oppgi dager før 10. februar 2020.",
+                  "undertekst": null,
+                  "svartype": "PERIODER",
+                  "min": "2019-08-10",
+                  "max": "2020-02-09",
+                  "pavirkerAndreSporsmal": false,
+                  "kriterieForVisningAvUndersporsmal": null,
+                  "svar": [
+                    {
+                      "verdi": "{\"fom\":\"2020-01-23\",\"tom\":\"2020-02-09\"}",
+                      "avgittAv": null
+                    }
+                  ],
+                  "undersporsmal": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "308903",
@@ -413,7 +432,6 @@
           ],
           "undersporsmal": []
         }
-
       ]
     },
     {
@@ -645,6 +663,380 @@
             }
           ],
           "undersporsmal": []
+        }
+      ]
+    },
+    {
+      "id": "c7a3fac7-c67b-3251-acee-8a52497545fd",
+      "tag": "MEDLEMSKAP_OPPHOLDSTILLATELSE",
+      "sporsmalstekst": "Har du oppholdstillatelse fra utlendingsdirektoratet?",
+      "undertekst": null,
+      "min": null,
+      "max": null,
+      "svartype": "JA_NEI",
+      "kriterieForVisningAvUndersporsmal": "JA",
+      "svar": [
+        {
+          "verdi": "JA"
+        }
+      ],
+      "undersporsmal": [
+        {
+          "id": "3d4a4d39-fb71-3c4c-86a2-561db9d6489b",
+          "tag": "MEDLEMSKAP_OPPHOLDSTILLATELSE_VEDTAKSDATO",
+          "sporsmalstekst": "Oppgi vedtaksdato om oppholdstillatelse:",
+          "undertekst": null,
+          "min": "2013-08-22",
+          "max": "2023-08-22",
+          "svartype": "DATO",
+          "kriterieForVisningAvUndersporsmal": null,
+          "svar": [
+            {
+              "verdi": "2023-01-01"
+            }
+          ],
+          "undersporsmal": []
+        },
+        {
+          "id": "2340f771-faa3-3139-a5d5-e2ea80c936f2",
+          "tag": "MEDLEMSKAP_OPPHOLDSTILLATELSE_PERMANENT",
+          "sporsmalstekst": "Har du fått permanent oppholdstillatelse?",
+          "undertekst": null,
+          "min": null,
+          "max": null,
+          "svartype": "JA_NEI",
+          "kriterieForVisningAvUndersporsmal": "NEI",
+          "svar": [
+            {
+              "verdi": "NEI"
+            }
+          ],
+          "undersporsmal": [
+            {
+              "id": "794766ab-04c6-3d0d-afa5-a6b602e5b4b6",
+              "tag": "MEDLEMSKAP_OPPHOLDSTILLATELSE_PERIODE",
+              "sporsmalstekst": "Hvilken periode har du fått oppholdstillatelse?",
+              "undertekst": null,
+              "min": "2013-08-22",
+              "max": "2033-08-22",
+              "svartype": "PERIODER",
+              "kriterieForVisningAvUndersporsmal": null,
+              "svar": [
+                {
+                  "verdi": "{\"fom\":\"2022-12-13\",\"tom\":\"2023-01-02\"}"
+                }
+              ],
+              "undersporsmal": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "04afca29-8c3a-3f04-9d41-b8dbea3524f1",
+      "tag": "MEDLEMSKAP_UTFORT_ARBEID_UTENFOR_NORGE",
+      "sporsmalstekst": "Har du utført arbeid utenfor Norge i det siste 12 månedene?",
+      "undertekst": null,
+      "min": null,
+      "max": null,
+      "svartype": "JA_NEI",
+      "kriterieForVisningAvUndersporsmal": "JA",
+      "svar": [
+        {
+          "verdi": "JA"
+        }
+      ],
+      "undersporsmal": [
+        {
+          "id": "0484f652-c5c7-3133-af1e-fc6fa6671d95",
+          "tag": "MEDLEMSKAP_UTFORT_ARBEID_UTENFOR_NORGE_GRUPPERING_0",
+          "sporsmalstekst": null,
+          "undertekst": null,
+          "min": null,
+          "max": null,
+          "svartype": "IKKE_RELEVANT",
+          "kriterieForVisningAvUndersporsmal": null,
+          "svar": [],
+          "undersporsmal": [
+            {
+              "id": "78e4857a-5337-313a-bef8-42e3d037269a",
+              "tag": "MEDLEMSKAP_UTFORT_ARBEID_UTENFOR_NORGE_ARBEIDSGIVER_0",
+              "sporsmalstekst": "Arbeidsgiver",
+              "undertekst": null,
+              "min": "1",
+              "max": "200",
+              "svartype": "FRITEKST",
+              "kriterieForVisningAvUndersporsmal": null,
+              "svar": [
+                {
+                  "verdi": "Arbeidsgiver0"
+                }
+              ],
+              "undersporsmal": []
+            },
+            {
+              "id": "2ad7a8d4-e881-3a0f-a4ed-207e9e5a869a",
+              "tag": "MEDLEMSKAP_UTFORT_ARBEID_UTENFOR_NORGE_HVOR_0",
+              "sporsmalstekst": "Velg land",
+              "undertekst": null,
+              "min": null,
+              "max": null,
+              "svartype": "COMBOBOX_SINGLE",
+              "kriterieForVisningAvUndersporsmal": null,
+              "svar": [
+                {
+                  "verdi": "Land0"
+                }
+              ],
+              "undersporsmal": []
+            },
+            {
+              "id": "e8ce78aa-1dca-3f5a-80be-23b015b5c5b7",
+              "tag": "MEDLEMSKAP_UTFORT_ARBEID_UTENFOR_NORGE_NAAR_0",
+              "sporsmalstekst": null,
+              "undertekst": null,
+              "min": "2013-08-22",
+              "max": "2024-08-22",
+              "svartype": "PERIODER",
+              "kriterieForVisningAvUndersporsmal": null,
+              "svar": [
+                {
+                  "verdi": "{\"fom\":\"2022-12-13\",\"tom\":\"2023-01-02\"}"
+                }
+              ],
+              "undersporsmal": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "30a8c74b-98cb-35de-8aaf-7bb0a2335fa4",
+      "tag": "MEDLEMSKAP_OPPHOLD_UTENFOR_NORGE",
+      "sporsmalstekst": "Har du oppholdt deg utenfor Norge i løpet av de siste 12 månedene?",
+      "undertekst": null,
+      "min": null,
+      "max": null,
+      "svartype": "JA_NEI",
+      "kriterieForVisningAvUndersporsmal": "JA",
+      "svar": [
+        {
+          "verdi": "JA"
+        }
+      ],
+      "undersporsmal": [
+        {
+          "id": "d24bef1d-e27e-340d-9f91-88bdcc08b4b5",
+          "tag": "MEDLEMSKAP_OPPHOLD_UTENFOR_NORGE_GRUPPERING_0",
+          "sporsmalstekst": null,
+          "undertekst": null,
+          "min": null,
+          "max": null,
+          "svartype": "IKKE_RELEVANT",
+          "kriterieForVisningAvUndersporsmal": null,
+          "svar": [],
+          "undersporsmal": [
+            {
+              "id": "a42f8426-36e4-3644-bb12-d816a6f39e5c",
+              "tag": "MEDLEMSKAP_OPPHOLD_UTENFOR_NORGE_HVOR_0",
+              "sporsmalstekst": "Velg land",
+              "undertekst": null,
+              "min": null,
+              "max": null,
+              "svartype": "COMBOBOX_SINGLE",
+              "kriterieForVisningAvUndersporsmal": null,
+              "svar": [
+                {
+                  "verdi": "Land"
+                }
+              ],
+              "undersporsmal": []
+            },
+            {
+              "id": "42b12505-230c-3970-a947-5e8d58341d18",
+              "tag": "MEDLEMSKAP_OPPHOLD_UTENFOR_NORGE_BEGRUNNELSE_0",
+              "sporsmalstekst": "Grunn for opphold",
+              "undertekst": null,
+              "min": null,
+              "max": null,
+              "svartype": "RADIO_GRUPPE",
+              "kriterieForVisningAvUndersporsmal": null,
+              "svar": [],
+              "undersporsmal": [
+                {
+                  "id": "58c73574-3243-32be-8705-989c12908011",
+                  "tag": "MEDLEMSKAP_OPPHOLD_UTENFOR_NORGE_BEGRUNNELSE_STUDIE_0",
+                  "sporsmalstekst": "Studier",
+                  "undertekst": null,
+                  "min": null,
+                  "max": null,
+                  "svartype": "RADIO",
+                  "kriterieForVisningAvUndersporsmal": null,
+                  "svar": [],
+                  "undersporsmal": []
+                },
+                {
+                  "id": "2028231d-4e99-335d-ae63-3fba419f84fa",
+                  "tag": "MEDLEMSKAP_OPPHOLD_UTENFOR_NORGE_BEGRUNNELSE_FERIE_0",
+                  "sporsmalstekst": "Ferie",
+                  "undertekst": null,
+                  "min": null,
+                  "max": null,
+                  "svartype": "RADIO",
+                  "kriterieForVisningAvUndersporsmal": null,
+                  "svar": [
+                    {
+                      "verdi": "CHECKED"
+                    }
+                  ],
+                  "undersporsmal": []
+                },
+                {
+                  "id": "263b76e1-3da4-3b92-873b-7a64199b0611",
+                  "tag": "MEDLEMSKAP_OPPHOLD_UTENFOR_NORGE_BEGRUNNELSE_FORSORG_0",
+                  "sporsmalstekst": "Forsørget medfølgende familiemedlem",
+                  "undertekst": null,
+                  "min": null,
+                  "max": null,
+                  "svartype": "RADIO",
+                  "kriterieForVisningAvUndersporsmal": null,
+                  "svar": [],
+                  "undersporsmal": []
+                }
+              ]
+            },
+            {
+              "id": "64170a0a-d908-3cfa-91ea-1b05b5e2fa87",
+              "tag": "MEDLEMSKAP_OPPHOLD_UTENFOR_NORGE_NAAR_0",
+              "sporsmalstekst": null,
+              "undertekst": null,
+              "min": "2021-08-22",
+              "max": "2023-08-22",
+              "svartype": "PERIODER",
+              "kriterieForVisningAvUndersporsmal": null,
+              "svar": [
+                {
+                  "verdi": "{\"fom\":\"2022-12-13\",\"tom\":\"2023-01-02\"}"
+                }
+              ],
+              "undersporsmal": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5fb98ead-bfc9-3465-ac3e-3d04be5fc738",
+      "tag": "MEDLEMSKAP_OPPHOLD_UTENFOR_EOS",
+      "sporsmalstekst": "Har du oppholdt deg utenfor EØS i løpet av de siste 12 månedene?",
+      "undertekst": null,
+      "min": null,
+      "max": null,
+      "svartype": "JA_NEI",
+      "kriterieForVisningAvUndersporsmal": "JA",
+      "svar": [
+        {
+          "verdi": "JA"
+        }
+      ],
+      "undersporsmal": [
+        {
+          "id": "ed3bf3f2-e21c-350b-b281-0adbf10c282f",
+          "tag": "MEDLEMSKAP_OPPHOLD_UTENFOR_EOS_GRUPPERING_0",
+          "sporsmalstekst": null,
+          "undertekst": null,
+          "min": null,
+          "max": null,
+          "svartype": "IKKE_RELEVANT",
+          "kriterieForVisningAvUndersporsmal": null,
+          "svar": [],
+          "undersporsmal": [
+            {
+              "id": "5c9ab281-22d3-3851-93db-560e2d0213da",
+              "tag": "MEDLEMSKAP_OPPHOLD_UTENFOR_EOS_HVOR_0",
+              "sporsmalstekst": "Velg land",
+              "undertekst": null,
+              "min": null,
+              "max": null,
+              "svartype": "COMBOBOX_SINGLE",
+              "kriterieForVisningAvUndersporsmal": null,
+              "svar": [
+                {
+                  "verdi": "Land"
+                }
+              ],
+              "undersporsmal": []
+            },
+            {
+              "id": "dd72e1db-7c5b-354c-a53f-14e82073940c",
+              "tag": "MEDLEMSKAP_OPPHOLD_UTENFOR_EOS_BEGRUNNELSE_0",
+              "sporsmalstekst": "Grunn for opphold",
+              "undertekst": null,
+              "min": null,
+              "max": null,
+              "svartype": "RADIO_GRUPPE",
+              "kriterieForVisningAvUndersporsmal": null,
+              "svar": [],
+              "undersporsmal": [
+                {
+                  "id": "7c9924da-81c0-39c9-a24d-55e2d793537b",
+                  "tag": "MEDLEMSKAP_OPPHOLD_UTENFOR_EOS_BEGRUNNELSE_STUDIE_0",
+                  "sporsmalstekst": "Studier",
+                  "undertekst": null,
+                  "min": null,
+                  "max": null,
+                  "svartype": "RADIO",
+                  "kriterieForVisningAvUndersporsmal": null,
+                  "svar": [],
+                  "undersporsmal": []
+                },
+                {
+                  "id": "42bd2df2-1509-36ae-bf69-8d6f06176213",
+                  "tag": "MEDLEMSKAP_OPPHOLD_UTENFOR_EOS_BEGRUNNELSE_FERIE_0",
+                  "sporsmalstekst": "Ferie",
+                  "undertekst": null,
+                  "min": null,
+                  "max": null,
+                  "svartype": "RADIO",
+                  "kriterieForVisningAvUndersporsmal": null,
+                  "svar": [
+                    {
+                      "verdi": "CHECKED"
+                    }
+                  ],
+                  "undersporsmal": []
+                },
+                {
+                  "id": "36cece31-ea06-3b48-b378-57665a62e2b0",
+                  "tag": "MEDLEMSKAP_OPPHOLD_UTENFOR_EOS_BEGRUNNELSE_FORSORG_0",
+                  "sporsmalstekst": "Forsørget medfølgende familiemedlem",
+                  "undertekst": null,
+                  "min": null,
+                  "max": null,
+                  "svartype": "RADIO",
+                  "kriterieForVisningAvUndersporsmal": null,
+                  "svar": [],
+                  "undersporsmal": []
+                }
+              ]
+            },
+            {
+              "id": "e9d00d38-3e3f-3458-87c3-40e5978e8098",
+              "tag": "MEDLEMSKAP_OPPHOLD_UTENFOR_EOS_NAAR_0",
+              "sporsmalstekst": null,
+              "undertekst": null,
+              "min": "2021-08-22",
+              "max": "2023-08-22",
+              "svartype": "PERIODER",
+              "kriterieForVisningAvUndersporsmal": null,
+              "svar": [
+                {
+                  "verdi": "{\"fom\":\"2022-12-13\",\"tom\":\"2023-01-02\"}"
+                }
+              ],
+              "undersporsmal": []
+            }
+          ]
         }
       ]
     },
