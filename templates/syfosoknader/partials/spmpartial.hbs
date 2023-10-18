@@ -297,28 +297,13 @@
                 {{ capitalize svar.0.verdi }}
             </span>
         </div>
-        {{#not_eq this.tag "ANDRE_INNTEKTSKILDER" }}
-            {{#eq svar.0.verdi kriterieForVisningAvUndersporsmal }}
-                {{# if undersporsmal }}
-                    <div class="oppsummering__undersporsmalsliste">
-                        {{# each undersporsmal as |underspm index| ~}}
-                            {{> syfosoknader/partials/spmpartial underspm}}
-                        {{/each}}
-                    </div>
-                {{/if}}
-            {{/eq}}
-        {{/not_eq}}
-        {{#eq this.tag "ANDRE_INNTEKTSKILDER" }}
-            {{#if tilNav }}
-                {{#eq svar.0.verdi kriterieForVisningAvUndersporsmal }}
-                    {{# if undersporsmal }}
-                        <div class="oppsummering__undersporsmalsliste">
-                            {{# each undersporsmal as |underspm index| ~}}
-                                {{> syfosoknader/partials/spmpartial underspm}}
-                            {{/each}}
-                        </div>
-                    {{/if}}
-                {{/eq}}
+        {{#eq svar.0.verdi kriterieForVisningAvUndersporsmal }}
+            {{# if undersporsmal }}
+                <div class="oppsummering__undersporsmalsliste">
+                    {{# each undersporsmal as |underspm index| ~}}
+                        {{> syfosoknader/partials/spmpartial underspm}}
+                    {{/each}}
+                </div>
             {{/if}}
         {{/eq}}
     </div>
