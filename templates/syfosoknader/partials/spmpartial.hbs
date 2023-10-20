@@ -299,9 +299,11 @@
         </div>
         {{#eq svar.0.verdi kriterieForVisningAvUndersporsmal }}
             {{# if undersporsmal }}
-                <div class="oppsummering__undersporsmalsliste">
+                <div class="oppsummering__undersporsmalsliste" id="{{tag}}">
                     {{# each undersporsmal as |underspm index| ~}}
-                        {{> syfosoknader/partials/spmpartial underspm}}
+                        <div class="undersporsmal__spacing">
+                            {{> syfosoknader/partials/spmpartial underspm}}
+                        </div>
                     {{/each}}
                 </div>
             {{/if}}
