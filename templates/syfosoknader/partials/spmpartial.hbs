@@ -379,6 +379,16 @@
     {{/if}}
 {{/eq}}
 
+{{#eq svartype "GRUPPE_AV_UNDERSPORSMAL"}}
+    {{# if this.undersporsmal }}
+        <div class="oppsummering__undersporsmalsliste">
+            {{# each this.undersporsmal as |underspm index| ~}}
+                {{> syfosoknader/partials/spmpartial underspm}}
+            {{/each}}
+        </div>
+    {{/if}}
+{{/eq}}
+
 {{#eq svartype "IKKE_RELEVANT"}}
     <div>
         {{#if this.sporsmalstekst}}
