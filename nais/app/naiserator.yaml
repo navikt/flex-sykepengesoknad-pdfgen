@@ -12,10 +12,10 @@ spec:
   port: 8080
   replicas:
     min: 2
-    max: 4
+    max: 6
     scalingStrategy:
       cpu:
-        thresholdPercentage: 90
+        thresholdPercentage: 50
   liveness:
     path: /internal/is_alive
   readiness:
