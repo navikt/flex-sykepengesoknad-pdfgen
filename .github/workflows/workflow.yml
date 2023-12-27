@@ -14,7 +14,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
       - name: docker-build-push
-        if: github.ref_name == 'master' || startsWith(github.ref_name, 'dev-')
+        if: github.ref_name == 'main' || startsWith(github.ref_name, 'dev-')
         uses: nais/docker-build-push@v0
         id: docker-build-push
         with:
