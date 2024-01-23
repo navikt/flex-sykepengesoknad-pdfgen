@@ -13,8 +13,9 @@
   "arbeidsgiver": null,
   "korrigerer": null,
   "korrigertAv": null,
-  "egenmeldtSykmelding": true,
-  "arbeidssituasjon": "FRILANSER",
+  "egenmeldtSykmelding": false,
+  "arbeidssituasjon": "FISKER",
+  "arbeidssituasjonTekst": "fisker",
   "soknadPerioder": [
     {
       "fom": "2019-09-02",
@@ -29,7 +30,7 @@
     {
       "id": "308938",
       "tag": "TILBAKE_I_ARBEID",
-      "sporsmalstekst": "Var du tilbake i fullt arbeid som frilanser før sykmeldingsperioden utløp 8. september 2019?",
+      "sporsmalstekst": "Var du tilbake i fullt arbeid som selvstendig næringsdrivende før sykmeldingsperioden utløp 8. september 2019?",
       "undertekst": null,
       "svartype": "JA_NEI",
       "min": null,
@@ -62,7 +63,7 @@
     {
       "id": "308940",
       "tag": "JOBBET_DU_100_PROSENT_0",
-      "sporsmalstekst": "I perioden 2. - 8. september 2019 var du 100% sykmeldt som frilanser. Jobbet du noe i denne perioden?",
+      "sporsmalstekst": "I perioden 2. - 8. september 2019 var du 100% sykmeldt som selvstendig næringsdrivende. Jobbet du noe i denne perioden?",
       "undertekst": null,
       "svartype": "JA_NEI",
       "min": null,
@@ -77,7 +78,7 @@
         {
           "id": "308941",
           "tag": "HVOR_MANGE_TIMER_0",
-          "sporsmalstekst": "Hvor mange timer jobber du normalt per uke som frilanser?",
+          "sporsmalstekst": "Hvor mange timer jobber du normalt per uke som selvstendig næringsdrivende?",
           "undertekst": null,
           "svartype": "TIMER",
           "min": "1",
@@ -93,7 +94,7 @@
         {
           "id": "308942",
           "tag": "HVOR_MYE_HAR_DU_JOBBET_0",
-          "sporsmalstekst": "Hvor mye jobbet du totalt i denne perioden som frilanser?",
+          "sporsmalstekst": "Hvor mye jobbet du totalt i denne perioden som selvstendig næringsdrivende?",
           "undertekst": null,
           "svartype": "PROSENT",
           "min": "1",
