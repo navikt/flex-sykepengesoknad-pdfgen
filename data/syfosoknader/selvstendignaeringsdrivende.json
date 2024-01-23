@@ -203,7 +203,7 @@
             },
             {
               "id": "308949",
-              "tag": "INNTEKTSKILDE_selvstendig næringsdrivende_SELVSTENDIG",
+              "tag": "INNTEKTSKILDE_FRILANSER_SELVSTENDIG",
               "sporsmalstekst": "selvstendig næringsdrivende",
               "undertekst": null,
               "svartype": "CHECKBOX",
@@ -218,7 +218,7 @@
               "undersporsmal": [
                 {
                   "id": "308950",
-                  "tag": "INNTEKTSKILDE_selvstendig næringsdrivende_SELVSTENDIG_ER_DU_SYKMELDT",
+                  "tag": "INNTEKTSKILDE_FRILANSER_SELVSTENDIG_ER_DU_SYKMELDT",
                   "sporsmalstekst": "Er du sykmeldt fra dette?",
                   "undertekst": null,
                   "svartype": "JA_NEI",
