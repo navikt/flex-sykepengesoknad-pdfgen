@@ -1,3 +1,2 @@
-place: holder
-cpu: 450m
-memory: 512Mi
+cpu: 500m
+memory: 1024Mi
