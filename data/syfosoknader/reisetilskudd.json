@@ -273,7 +273,9 @@
       "min": null,
       "max": null,
       "kriterieForVisningAvUndersporsmal": null,
-      "svar": [],
+      "svar": [
+        {"verdi":  "true"}
+      ],
       "undersporsmal": [
         {
           "id": "308936",
