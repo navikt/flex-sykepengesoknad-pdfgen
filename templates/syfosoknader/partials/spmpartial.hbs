@@ -411,26 +411,6 @@
     {{/if}}
 {{/eq}}
 
-{{#eq svartype "BEKREFTELSESPUNKTER"}}
-    {{# if this.undersporsmal }}
-        <div class="oppsummering__undersporsmalsliste">
-            {{# each this.undersporsmal as |underspm index| ~}}
-                {{> syfosoknader/partials/spmpartial underspm}}
-            {{/each}}
-        </div>
-    {{/if}}
-{{/eq}}
-
-{{#eq svartype "OPPSUMMERING"}}
-    {{# if this.undersporsmal }}
-        <div class="oppsummering__undersporsmalsliste">
-            {{# each this.undersporsmal as |underspm index| ~}}
-                {{> syfosoknader/partials/spmpartial underspm}}
-            {{/each}}
-        </div>
-    {{/if}}
-{{/eq}}
-
 {{#eq svartype "CHECKBOX_PANEL"}}
     {{#each svar as |s index|~}}
         {{#eq verdi "CHECKED"}}

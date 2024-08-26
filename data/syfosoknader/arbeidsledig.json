@@ -428,24 +428,7 @@
       "svar": [
         {"verdi":  "true"}
       ],
-      "undersporsmal": [
-        {
-          "id": "308936",
-          "tag": "BEKREFT_OPPLYSNINGER",
-          "sporsmalstekst": "Jeg har lest all informasjonen jeg har fått i søknaden og bekrefter at opplysningene jeg har gitt er korrekte.",
-          "undertekst": null,
-          "svartype": "CHECKBOX_PANEL",
-          "min": null,
-          "max": null,
-          "kriterieForVisningAvUndersporsmal": null,
-          "svar": [
-            {
-              "verdi": "CHECKED"
-            }
-          ],
-          "undersporsmal": []
-        }
-      ]
+      "undersporsmal": []
     }
   ]
 }
