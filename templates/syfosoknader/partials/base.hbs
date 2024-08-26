@@ -107,9 +107,11 @@
     </div>
     <div class="sporsmalcontainer">
         {{# each sporsmal as |spm|~}}
-            <div class="oppsummering__seksjon">
-                {{> syfosoknader/partials/spmpartial spm}}
-            </div>
+            {{#not_eq spm.tag "TIL_SLUTT"}}
+                <div class="oppsummering__seksjon">
+                    {{> syfosoknader/partials/spmpartial spm}}
+                </div>
+            {{/not_eq}}
         {{/each}}
     </div>
 
