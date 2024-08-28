@@ -411,32 +411,6 @@
     {{/if}}
 {{/eq}}
 
-{{#eq svartype "BEKREFTELSESPUNKTER"}}
-    {{#if this.sporsmalstekst}}
-        <h3 class="sporsmalstekst">
-            {{ this.sporsmalstekst }}
-        </h3>
-    {{/if}}
-    {{#if this.undertekst}}
-        <p class="undertekst">
-            {{ this.undertekst }}
-        </p>
-    {{/if }}
-    <ul class="svar-list">
-        {{# each svar }}
-            <li>{{safe this.verdi}}</li>
-        {{/each}}
-    </ul>
-
-    {{# if this.undersporsmal }}
-        <div class="oppsummering__undersporsmalsliste">
-            {{# each this.undersporsmal as |underspm index| ~}}
-                {{> syfosoknader/partials/spmpartial underspm}}
-            {{/each}}
-        </div>
-    {{/if}}
-{{/eq}}
-
 {{#eq svartype "CHECKBOX_PANEL"}}
     {{#each svar as |s index|~}}
         {{#eq verdi "CHECKED"}}

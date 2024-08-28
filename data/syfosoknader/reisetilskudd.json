@@ -267,56 +267,16 @@
     {
       "id": "308935",
       "tag": "TIL_SLUTT",
-      "sporsmalstekst": "Viktig å være klar over:",
+      "sporsmalstekst": null,
       "undertekst": "",
-      "svartype": "BEKREFTELSESPUNKTER",
+      "svartype": "OPPSUMMERING",
       "min": null,
       "max": null,
       "kriterieForVisningAvUndersporsmal": null,
       "svar": [
-        {
-          "verdi": "Retten til reisetilskudd gjelder bare hvis du trenger midlertidig transport til og fra arbeidsstedet på grunn av helseplager."
-        },
-        {
-          "verdi": "Du kan få reisetilskudd hvis du i utgangspunktet har rett til sykepenger."
-        },
-        {
-          "verdi": "NAV kan innhente flere opplysninger som er nødvendige for å behandle søknaden."
-        },
-        {
-          "verdi": "NAV kan holde igjen eller kreve tilbake penger hvis du gir uriktige eller ufullstendige opplysninger."
-        },
-        {
-          "verdi": "Det å gi feil opplysninger kan være straffbart."
-        },
-        {
-          "verdi": "Fristen for å søke reisetilskudd er som hovedregel 3 måneder."
-        },
-        {
-          "verdi": "Du kan endre svarene i denne søknaden opp til 12 måneder etter du sendte den inn første gangen."
-        },
-        {
-          "verdi": "Du kan lese mer om rettigheter og plikter på <a href=\"https://www.nav.no/reisetilskudd\" target=\"_blank\">nav.no/reisetilskudd</a>."
-        }
+        {"verdi":  "true"}
       ],
-      "undersporsmal": [
-        {
-          "id": "308936",
-          "tag": "BEKREFT_OPPLYSNINGER",
-          "sporsmalstekst": "Jeg har lest all informasjonen jeg har fått i søknaden og bekrefter at opplysningene jeg har gitt er korrekte.",
-          "undertekst": null,
-          "svartype": "CHECKBOX_PANEL",
-          "min": null,
-          "max": null,
-          "kriterieForVisningAvUndersporsmal": null,
-          "svar": [
-            {
-              "verdi": "CHECKED"
-            }
-          ],
-          "undersporsmal": []
-        }
-      ]
+      "undersporsmal": []
     }
   ]
 }
