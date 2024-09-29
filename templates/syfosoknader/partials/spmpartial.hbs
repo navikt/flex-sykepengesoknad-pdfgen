@@ -285,6 +285,15 @@
             <h3 class="sporsmalstekst">
                 {{ this.sporsmalstekst }}
             </h3>
+            {{#if this.tag eq "INNTEKTSOPPLYSNINGER_VARIG_ENDRING_25_PROSENT"}}
+                <p>Fastsatt gjennomsnittlig inntekt: {{ this.metadata.beregnet.snitt }}</p>
+                <p>Dette er basert på årene:</p>
+                {{#each this.metadata.inntekter}}
+                    <p>{{this.aar}}: {{currency_no this.verdi}}</p>
+                {{/each}}
+                <br/>
+            {{/if}}
+
         {{/if}}
         {{#if this.undertekst}}
             <p class="undertekst">
