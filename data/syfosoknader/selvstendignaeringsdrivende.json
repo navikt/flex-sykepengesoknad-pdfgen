@@ -1,13 +1,13 @@
 {
-  "id": "bd6f6207-3888-4210-a4c0-cbe6806b5d00",
-  "sykmeldingId": "a8e40578-682b-4a04-bfda-b7768af2ae99",
+  "aktorId": "1556025402895",
+  "soknadsId": "a5e62b14-9294-440d-a293-0415c4f1ac23",
+  "fnr": "16086801683",
+  "navn": "Karina Mostad",
   "soknadstype": "SELVSTENDIGE_OG_FRILANSERE",
-  "status": "NY",
   "fom": "2020-04-01",
   "tom": "2020-04-24",
-  "opprettetDato": "2020-05-13",
-  "sendtTilNAVDato": null,
-  "sendtTilArbeidsgiverDato": null,
+  "innsendtDato": "2020-05-13",
+  "sendtArbeidsgiver": null,
   "avbruttDato": null,
   "startSykeforlop": "2020-04-01",
   "sykmeldingUtskrevet": "2020-03-31",
@@ -15,13 +15,16 @@
   "korrigerer": null,
   "korrigertAv": null,
   "forstegangssoknad": true,
+  "egenmeldtSykmelding": false,
   "arbeidssituasjon": "NAERINGSDRIVENDE",
+  "arbeidssituasjonTekst": "selvstendig næringsdrivende",
   "merknaderFraSykmelding": [],
   "soknadPerioder": [
     {
       "fom": "2020-04-01",
       "tom": "2020-04-24",
       "grad": 100,
+      "faktiskGrad": 32,
       "sykmeldingstype": "AKTIVITET_IKKE_MULIG"
     }
   ],
@@ -678,7 +681,6 @@
       "undersporsmal": []
     }
   ],
-  "egenmeldtSykmelding": false,
   "opprettetAvInntektsmelding": false,
   "klippet": false
 }
