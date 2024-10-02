@@ -286,14 +286,15 @@
                 {{ this.sporsmalstekst }}
             </h3>
             {{#eq this.tag "INNTEKTSOPPLYSNINGER_VARIG_ENDRING_25_PROSENT"}}
-                <p>Fastsatt gjennomsnittlig inntekt: {{ this.metadata.sigrunInntekt.beregnet.snitt }}</p>
-                <p>Dette er basert på årene:</p>
-                {{#each this.metadata.sigrunInntekt.inntekter}}
-                    <p>{{this.aar}}: {{currency_no this.verdi}}</p>
-                {{/each}}
-                <br/>
+                {{#if this.metadata.sigrunInntekt }}
+                    <p>Fastsatt gjennomsnittlig inntekt: {{ this.metadata.sigrunInntekt.beregnet.snitt }}</p>
+                    <p>Dette er basert på årene:</p>
+                    {{#each this.metadata.sigrunInntekt.inntekter}}
+                        <p>{{this.aar}}: {{currency_no this.verdi}}</p>
+                    {{/each}}
+                    <br/>
+                {{/if}}
             {{/eq}}
-
         {{/if}}
         {{#if this.undertekst}}
             <p class="undertekst">
