@@ -287,10 +287,10 @@
             </h3>
             {{#eq this.tag "INNTEKTSOPPLYSNINGER_VARIG_ENDRING_25_PROSENT"}}
                 {{#if this.metadata.sigrunInntekt }}
-                    <p>Fastsatt gjennomsnittlig inntekt: {{ currency_no this.metadata.sigrunInntekt.beregnet.snitt }}</p>
-                    <p>Dette er basert på årene:</p>
+                    <p>Gjennomsnittlig årsinntekt på sykmeldingstidspunktet: {{ currency_no this.metadata.sigrunInntekt.beregnet.snitt true}} kroner</p>
+                    <p>Inntekt per kalenderår, de tre siste ferdiglignede årene:</p>
                     {{#each this.metadata.sigrunInntekt.inntekter}}
-                        <p>{{this.aar}}: {{currency_no this.verdi}}</p>
+                        <p>{{this.aar}}: {{currency_no this.verdi true}} kroner</p>
                     {{/each}}
                     <br/>
                 {{/if}}
