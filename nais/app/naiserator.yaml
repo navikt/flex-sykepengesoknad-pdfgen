@@ -11,8 +11,8 @@ spec:
   image: {{ image }}
   port: 8080
   replicas:
-    min: 2
-    max: 6
+    min: {{replicas_min}}
+    max: {{replicas_max}}
     scalingStrategy:
       cpu:
         thresholdPercentage: 50
