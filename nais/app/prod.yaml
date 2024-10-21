@@ -1,2 +1,4 @@
 cpu: 500m
 memory: 1024Mi
+replicas_min: 2
+replicas_max: 6
