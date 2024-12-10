@@ -15,7 +15,7 @@ spec:
     max: {{replicas_max}}
     scalingStrategy:
       cpu:
-        thresholdPercentage: 60
+        thresholdPercentage: 80
   liveness:
     path: /internal/is_alive
   readiness:
