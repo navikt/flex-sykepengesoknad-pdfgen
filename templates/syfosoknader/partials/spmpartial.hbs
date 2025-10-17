@@ -76,6 +76,24 @@
     {{/each}}
 {{/eq}}
 
+{{#eq svartype "AAR_MAANED"}}
+    {{#if this.sporsmalstekst}}
+        <h3 class="sporsmalstekst">
+            {{ this.sporsmalstekst }}
+        </h3>
+    {{/if}}
+    {{#if this.undertekst}}
+        <p class="undertekst">
+            {{ this.undertekst }}
+        </p>
+    {{/if }}
+    {{# each svar }}
+        <p class="svar svar--dato">
+            {{ iso_to_year_month verdi }}
+        </p>
+    {{/each}}
+{{/eq}}
+
 {{#eq svartype "CHECKBOX_GRUPPE"}}
     <div class="oppsummering__sporsmalscontainer">
         {{#if this.sporsmalstekst }}
