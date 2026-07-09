@@ -103,6 +103,15 @@
                         </p>
                     {{/each}}
             {{/if}}
+
+            {{#if meldingTilNavDagerFraSykmelding}}
+                <p class="header__tittel">Melding til Nav-dager fra sykmeldingen</p>
+                    {{# each meldingTilNavDagerFraSykmelding as |periode|~}}
+                        <p class="svar svar--dato">
+                             {{ iso_to_date periode.fom }} - {{ iso_to_date periode.tom }}
+                        </p>
+                    {{/each}}
+            {{/if}}
         </div>
     </div>
     <div class="sporsmalcontainer">
