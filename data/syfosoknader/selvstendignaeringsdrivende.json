@@ -595,5 +595,11 @@
     }
   ],
   "opprettetAvInntektsmelding": false,
-  "klippet": false
+  "klippet": false,
+  "meldingTilNavDagerFraSykmelding": [
+    {
+      "fom": "2020-03-21",
+      "tom": "2020-03-31"
+    }
+  ]
 }
