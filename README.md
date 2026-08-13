@@ -1,11 +1,7 @@
 # flex-sykepengesoknad-pdfgen
 
 `flex-sykepengesoknad-pdfgen` er en applikasjon som genererer PDF-filer av utfylte søknader.
-Disse PDF-filene blir brukt i Gosys og Altinn, og i all hovedsak er det kun
-[`sykepengesoknad-arkivering-oppgave`](https://github.com/navikt/sykepengesoknad-arkivering-oppgave) og [`sykepengesoknad-altinn`](https://github.com/navikt/sykepengesoknad-altinn) som snakker med denne applikasjonen fra vår side.
-Teknisk sett, gitt et ordentlig JSON-objekt kan hvem som helst generere en PDF.
-De eksponterte endepunktene er ikke begrenset til `sykepengesoknad-arkivering-oppgave` og `sykepengesoknad-altinn`.
-
+Disse PDF-filene blir brukt i Gosys via [`sykepengesoknad-arkivering-oppgave`](https://github.com/navikt/sykepengesoknad-arkivering-oppgave).
 
 ## Overordnet bilde av applikasjonen
 
