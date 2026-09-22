@@ -300,6 +300,20 @@
 {{#eq svartype "JA_NEI"}}
     <div class="oppsummering__sporsmalscontainer">
         {{#if this.sporsmalstekst}}
+            {{#eq this.tag "FLERE_INNTEKTSKILDER_GHOST"}}
+                {{#if this.metadata.kjenteInntektskilder }}
+                    <h3>Andre registrerte arbeidsforhold</h3>
+                    {{#each this.metadata.kjenteInntektskilder}}
+                        <div class="oppsummering__avkrysset">
+                            <img alt="arbeidsgiver" class="checkbox" src="{{ image "arbeidsgiver.svg" }}"/>
+                            <p class="svar svar--checkbox">
+                                <b>{{this.navn}}</b><br/>Orgnummer: {{this.orgnummer}}<br/>Kilde: {{this.kilde}}
+                            </p>
+                        </div>
+                    {{/each}}
+                {{/if}}
+                <br/>
+            {{/eq}}
             <h3 class="sporsmalstekst">
                 {{ this.sporsmalstekst }}
             </h3>
