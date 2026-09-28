@@ -25,6 +25,21 @@
     "2019-09-03",
     "2019-09-04"
   ],
+  "flereInntektskilderGhost": [{
+      "navn": "Ruter",
+      "orgnummer": "222",
+      "kilde": "AAREG"
+    },
+      {
+        "navn": "Blomsterbutikken",
+        "orgnummer": "111",
+        "kilde": "AAREG"
+      },
+      {
+        "navn": "Bensinstasjonen med det veldig lange navnet, Stavanger (ved det røde huset som ligger ved Shell)",
+        "orgnummer": "333",
+        "kilde": "AAREG"
+      }],
   "sporsmal": [
     {
       "id": "660076",
@@ -444,23 +459,6 @@
       "min": null,
       "max": null,
       "kriterieForVisningAvUndersporsmal": "JA",
-      "metadata": {
-        "kjenteInntektskilder": [{
-          "navn": "Ruter",
-          "orgnummer": "222",
-          "kilde": "AAREG"
-        },
-        {
-          "navn": "Blomsterbutikken",
-          "orgnummer": "111",
-          "kilde": "AAREG"
-        },
-        {
-          "navn": "Bensinstasjonen med det veldig lange navnet, Stavanger (ved det røde huset som ligger ved Shell)",
-          "orgnummer": "333",
-          "kilde": "AAREG"
-        }]
-      },
       "svar": [
         {
           "verdi": "JA"
