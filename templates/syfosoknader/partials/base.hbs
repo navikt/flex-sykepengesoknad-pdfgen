@@ -118,7 +118,7 @@
         {{# each sporsmal as |spm|~}}
             {{#not_eq spm.tag "TIL_SLUTT"}}
                 <div class="oppsummering__seksjon">
-                    {{> syfosoknader/partials/spmpartial spm flereInntektskilderGhost=this.flereInntektskilderGhost}}
+                    {{> syfosoknader/partials/spmpartial spm ghostInntekter=this.ghostInntekter}}
                 </div>
             {{/not_eq}}
         {{/each}}

@@ -301,9 +301,9 @@
     <div class="oppsummering__sporsmalscontainer">
         {{#if this.sporsmalstekst}}
             {{#eq this.tag "FLERE_INNTEKTSKILDER_GHOST"}}
-                {{#if flereInntektskilderGhost}}
+                {{#if ghostInntekter}}
                     <h3>Andre registrerte arbeidsforhold</h3>
-                    {{#each flereInntektskilderGhost}}
+                    {{#each ghostInntekter}}
                         <div class="oppsummering__avkrysset">
                             <img alt="arbeidsgiver" class="checkbox" src="{{ image "arbeidsgiver.svg" }}"/>
                             <p class="svar svar--checkbox">

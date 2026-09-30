@@ -25,7 +25,7 @@
     "2019-09-03",
     "2019-09-04"
   ],
-  "flereInntektskilderGhost": [{
+  "ghostInntekter": [{
       "navn": "Ruter",
       "orgnummer": "222",
       "kilde": "AAREG"
